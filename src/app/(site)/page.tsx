@@ -1,3 +1,10 @@
+import { Banners } from "@/components/home/banners";
+import { data } from "@/data";
+
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <Banners list={data.banners} />
+    </div>
+  );
 }
