@@ -12,7 +12,7 @@ type BannerProps = {
 let bannerInterval: NodeJS.Timeout;
 const bannerTime = 3000;
 
-export const Banners = ({ list }: BannerProps) => {
+export const BannerCarousel = ({ list }: BannerProps) => {
   const [currentBanner, setCurrentBanner] = useState(0);
 
   const nextBanner = useCallback(() => {
